@@ -1,0 +1,64 @@
+<!-- /*
+* John Moreau
+* CSS115
+* 11/8/2023
+*
+*/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <script defer src="assets/scripts/index.js"></script>
+    </head>
+    <body class="dark backgroundDog">
+        <header class="header">
+            <div id="logo">
+                <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
+            </div>
+            <nav class="top-nav light">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="switch">
+                <span id="darkmode-switch" class="darkmode-switch dark">Dark mode: ON</span>
+            </div>
+        </header>
+        <main id="wrapper" class="home dark">
+            <h2 class="page-title">About</h2>
+            <h3>🐕‍🦺 Facts about Mars the Chocolate Labrador 🐕‍🦺</h3>
+            <ul>
+                <li>
+                    Mars is a chocolate lab and is just under 4 years old, born in late May.
+                    She is a very full of energy dog and loves to play frisbee. She is very friendly and loves to meet new people.        
+                </li>
+                <br>
+                <li>
+                    Her favorite toy is a frisbee and she loves to play fetch. She is great at catching the frisbee and will do it all day if you let her.
+                </li>
+                <br>
+                <li>
+                    She knows how to sit, lay down, shake, <strong>wave</strong>, play dead, bow, spin, and stand. She is very good at listening and will do anything for a treat.
+                </li>
+                <br>
+                <li>
+                    She can be protective and sometimes barks at people coming into our home, she might seem tough at first, but she could not hurt a fly. She is very sweet and loves to brush up and lean on you, so be careful and don't get nocked over!
+                </li>
+            </ul>
+
+            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)" autofocus> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
+                🐾 Click Here to go to the gallery! 🐾
+            </button>
+        </main>
+    </body>
+    <footer>
+        <p>© John Moreau | CSS115 | 11-9-23</p>
+    </footer>
+</html>

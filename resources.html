@@ -1,0 +1,97 @@
+<!-- /*
+* John Moreau
+* CSS115
+* 11/8/2023
+*
+*
+*/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <script defer src="assets/scripts/index.js"></script>
+    </head>
+    <body class="dark" >
+        <header class="header">
+            <div id="logo">
+                <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
+            </div>
+            <nav class="top-nav dark">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="switch">
+                <span id="darkmode-switch" class="darkmode-switch dark">Dark mode: ON</span>
+            </div>
+        </header>
+        <main id="wrapper" class="dark">
+            <h2 class="page-title">Credits & Resources</h2>
+            <table class="dark">
+                <thead class="dark">
+                <th>Resource</th>
+                <th>Link</th>
+                </thead>
+                <tbody class="dark">
+                    <tr>
+                        <td>HTML Tags</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tables 1</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tables 2</td>
+                        <td><a href="https://www.w3schools.com/html/html_tables.asp">https://www.w3schools.com/html/html_tables.asp</a></td>
+                    </tr>
+                    <tr>
+                        <td>CSS Children Selector</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator">https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator</a></td>
+                    </tr>
+                    <tr>
+                        <td>CSS Class Selector</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors</a></td>
+                    </tr>
+                    <tr>
+                        <td>Background Image</td>
+                        <td><a href="https://www.w3schools.com/html/html_images_background.asp">https://www.w3schools.com/html/html_images_background.asp</a></td>
+                    </tr>
+                    <tr>
+                        <td>Z-index</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">https://developer.mozilla.org/en-US/docs/Web/CSS/z-index</a></td>
+                    </tr>
+                    <tr>
+                        <td>Button Attributes</td>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button</a></td>
+                    </tr>
+                    <tr>
+                        <td>Centering stuff</td>
+                        <td><a href="https://bootcamp.uxdesign.cc/5-simple-ways-to-center-a-div-horizontally-and-vertically-in-css-23bbaa5f9f52">https://bootcamp.uxdesign.cc/5-simple-ways-to-center-a-div-horizontally-and-vertically-in-css</a></td>
+                    </tr>
+                    <tr>
+                        <td>Emojis</td>
+                        <td><a href="https://emojipedia.org">https://emojipedia.org</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pictures</td>
+                        <td>© John Moreau</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)" autofocus> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
+                🐾 Home 🐾
+            </button>
+        </main>
+    </body>
+    <footer>
+        <p>© John Moreau | CSS115 | 11-9-23</p>
+    </footer>
+</html>

@@ -1,0 +1,333 @@
+/* ******** Variables ******** */
+:root {
+  --transform-time: 0.3s;
+  --border-neutral: 2px solid rgb(66, 57, 57);
+  --border-button-darkmode: 2px solid #cdcdcd;
+  --border-button-lightmode: 2px solid rgb(11, 11, 11);
+  --text-darkmode: rgb(255, 255, 255);
+  --text-lightmode: color:rgb(11, 11, 11);
+}
+
+/* ******** Gallery ******** */
+.flexbox {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flexitem {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  /* width: 100%; */
+  /* height: 100%; */
+  min-width: 20%;
+  max-width: 30%;
+}
+
+.flexitem > img:hover {
+  transform: scale(1.1);
+  transition: var(--transform-time);
+  
+}
+
+.flexitem > img:not(:hover) {
+  transform: scale(1.0);
+  transition: var(--transform-time);
+  cursor: pointer;
+}
+
+.overlay {
+  display: none; /* Hidden by default, becomes FLEX when clicking an image */
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999; 
+}
+
+.gallery-container {
+    max-height: 75%;
+    max-width: 90%;
+}
+
+.close-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  max-width: 1064px;
+}
+
+.close-btn {
+  /* position: relative;
+  top: 0%;
+  left: 35%;  */
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* ******** Dark Mode ******** */
+.dark {
+  background-color: #222;
+  color: #d9d9d9;
+  /* border-color: #545454; */
+}
+
+.darkmode-switch {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--text-lightmode) !important;
+  border: var(--border-button-lightmode);
+  border-radius: 1.50rem;
+  width: 3.125rem;
+  text-align: center;
+  font-size: 0.55rem;
+  padding: 0.15rem;
+  background:none;
+}
+
+.darkmode-switch.dark {
+  color: var(--text-darkmode) !important;
+  border: var(--border-button-darkmode)
+}
+
+.darkmode-switch:hover {
+  border: 2px solid #4f4f4f;
+  }
+
+.darkmode-switch.dark:hover {
+border: 2px solid #ffffff;
+}
+
+
+
+/* ******** Container ******** */
+#wrapper {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0rem 0.75rem 1.5rem; /* top right bottom left */
+  background-color: rgba(211, 211, 211, 0.85);
+  align-items: center;
+  
+}
+
+#wrapper.dark {
+  background-color: rgba(28, 28, 28, 0.85);
+}
+
+.backgroundDog{
+  background-image: url('../images/Mars_Fall.jpg'); /* Need to use a direct path here */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+}
+
+
+/* ******** CSS for Buttons ******** */
+
+.next-button {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  align-self: center;
+  padding: 1rem 0.5rem;
+  margin: 3rem 1rem 1rem;
+  text-decoration: none;
+  width: 75%;
+  border: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.next-button:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+
+/* ******** CSS for header top bar ******** */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto 1.25rem;
+  padding: 10px 20px;
+  max-width: 50rem;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  max-width: 75rem;
+  opacity: 0.50;
+  min-height: 50vh;
+}
+
+nav.top-nav {
+  width: 100%;
+  /* opacity: 0.75; */
+}
+
+
+.top-nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; 
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li {
+  font-size: 1.0rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  /* border-bottom: var(--border-neutral); */
+}
+
+.top-nav li.active {
+  border-bottom: var(--border-neutral);
+}
+
+.top-nav li:hover {
+  border-bottom: var(--border-neutral);
+}
+
+
+.top-nav a {
+  text-decoration: none;
+  /* color: #181717; */
+}
+
+/* .top-nav.dark a {
+  color: #fff;
+} */
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* ******** CSS for Tables ******** */
+table {
+  /* border-collapse: collapse; */
+  width: 100%;
+  color: rgb(11, 11, 11);
+  border: 2px solid #252525;
+  font-family: 'Calibri';
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+thead th {
+  background-color: rgb(48, 48, 48);
+  color: rgb(89, 136, 178);
+  font-size: 1.5rem;
+  font-family: 'Calibri';
+}
+thead.dark th{
+  background-color: rgb(29, 27, 27);
+  /* color: rgb(89, 136, 178); */
+}
+
+td,th {
+  padding: 0.5rem;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: #cdcaca;
+  }
+tbody > tr:nth-child(even) {
+  background-color: #888585;
+  }
+
+tbody.dark > tr:nth-child(odd) {
+    background-color: #302d2d;
+  }
+tbody.dark > tr:nth-child(even) {
+    background-color: #4b4848;
+  }
+
+
+/* ******* Images ******** */
+img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+img.logo {
+  width: 65px;
+  height: auto;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: var(--transform-time);
+    cursor: pointer;
+}
+
+/* To make the transition back smooth */
+.logo:not(:hover) {
+    transform: scale(1.0);
+    transition: var(--transform-time);
+    cursor: pointer;
+}
+
+
+/* ******** body ******** */
+body *:not(td>a) {
+  color:rgb(11, 11, 11) ;
+}
+
+body.dark * {
+  color:rgb(255, 255, 255) ;
+  
+}
+
+body {
+  min-width: 200px;
+  font-family: 'Calibri';
+  font-size: 1.1rem;
+  color: #252525;
+}
+
+.hidden * {
+  display: none;
+}
+
+.light * {
+  color: var(--text-darkmode) !important;
+}
+

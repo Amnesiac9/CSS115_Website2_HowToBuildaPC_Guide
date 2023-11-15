@@ -1,0 +1,54 @@
+<!-- /*
+* John Moreau
+* CSS115
+* 11/8/2023
+*
+*/ -->
+
+<!DOCTYPE html> <!-- doctype declaration tells  -->
+<html> <!-- html is the root tag of the document -->
+    <head> <!-- head defines the metadata for the document -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <script defer src="assets/scripts/index.js"></script>
+    </head>
+    <body class="dark backgroundDog"> <!-- body defines the document's viewable content -->
+        <header class="header"> <!-- header represents introductory content, logo, navigation, etc. -->
+            <div id="logo"> <!-- div defines a division or section in an HTML document -->
+                <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
+            </div>
+            <nav class="top-nav light"> <!-- nav defines a section of navigation links -->
+                <ul> <!-- ul defines an unordered list -->
+                    <li class="active"> <!-- li defines a list item -->
+                        <a href="index.html">Home</a> <!-- a defines a link -->
+                    </li> 
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="switch">
+                <span id="darkmode-switch" class="darkmode-switch dark">Dark mode: ON</span>
+            </div>
+        </header>
+        <main id="wrapper" class="home dark"> <!-- main defines the main content of a document -->
+            <h2 class="page-title">Home</h2> <!-- h2 defines a section heading, largest is h1, getting smaller up to h6 -->
+            <h3> 🐕 Welcome to my website dedicated to Mars! 🐕</h3> <!-- h3 defines another section heading, smaller than h2-->
+            <p> Mars is the best chocolate lab in the world. </p> <!--p defines a generic paragraph -->
+            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)" autofocus> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
+                🐾 Click Here to learn more! 🐾
+            </button>
+        </main>
+    </body>
+    <footer> <!-- footer defines a footer for a document or section -->
+        <p>© John Moreau | CSS115 | 11-9-23</p>
+    </footer>
+</html>

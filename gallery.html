@@ -1,0 +1,155 @@
+<!-- /*
+* John Moreau
+* CSS115
+* 11/8/2023
+*
+*
+*/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <script defer src="assets/scripts/index.js"></script>
+    </head>
+    <body class="dark">
+        <div class="overlay"> <!-- overlay dark layer ontop of whole webpage when viewing image -->
+            <div class="close-btn-container">
+                <span class="close-btn">&times;</span> <!-- close button, TODO: figure out how to make it stick to the image-->
+            </div>
+            <div class="gallery-container"> <!-- Container for our pop up image viewer -->
+                <img class="gallery-large" src="" alt=""> <!-- empty src and alt to be added by our javascript on click function -->
+            </div>
+        </div>
+        <header class="header">
+            <div id="logo">
+                <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
+            </div>
+            <nav class="top-nav dark">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="switch">
+                <span id="darkmode-switch" class="darkmode-switch dark">Dark mode: ON</span>
+            </div>
+        </header>
+        
+        <main id="wrapper" class="dark">
+            <h2 class="page-title">Gallery</h2>
+
+            <!-- <video width="560" height="315"  allowfullscreen controls>
+                <source src="https://www.youtube.com/embed/pF8o9o8ALac" >
+                Your browser does not support the video tag.
+            </video> -->
+            <!-- Use iframe because youtube doesn't support using video tag? -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pF8o9o8ALac?si=ofQMcJJyfiMarg0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+            <div class="flexbox">
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/Ls531NTX/20200606-112205.jpg" alt="Chocolate Lab Puppy">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/mDF3dkKW/20200613-130808.jpg" alt="Chocolate Lab Puppy">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/0N4ddDWC/20200620-152242.jpg" alt="Chocolate Lab Puppy">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/021nBG8W/20200626-155634.jpg" alt="Chocolate Lab Puppy in car" >
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/0jRYhxqM/20200626-160951.jpg" alt="Chocolate Lab Puppy in Grass">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/qvkLkk62/20200627-113818.jpg" alt="Chocolate Lab Puppy in Grass">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/XYQgqT9m/20200629-201222.jpg" alt="Chocolate Lab Puppy Sleeping">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/mkYYsqbd/20200723-082628.jpg" alt="Chocolate Lab Puppy Sleeping">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/TYj0My1R/20200722-072738.jpg" alt="Chocolate Lab Puppy">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/qByXyt88/20200807-183059.jpg" alt="Chocolate Lab Puppy in Car">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/sDJYHtHx/20200829-082329.jpg" alt="Chocolate Lab Puppy Eyes">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/15S0H9Hb/20210210-172128.jpg" alt="Chocolate Lab Puppy with Corgi">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/qvM8PjWL/20210218-162151-2-01.jpg" alt="Chocolate Lab in Snow">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/43YpdnfH/20210219-152020.jpg" alt="Chocolate Lab with Corgi in Snow">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/0yWpP7sq/20210317-223729.jpg" alt="Chocolate Lab Hiding with Ball">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/xdBMbY8x/20210428-090601.jpg" alt="Chocolate Lab with Cone on Head">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/fLXXcF0w/20210505-161955.jpg" alt="Chocolate Lab Happy">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/3NFv6vBV/20210506-153801.jpg" alt="Chocolate Lab holding Roses">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/5yVzn3w8/20210507-092135.jpg" alt="Chocolate Lab looks like a seal">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/yY79RL6H/20210606-092442.jpg" alt="Chocolate Lab by log on beach">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/8PwvmLsr/20210608-181940.jpg" alt="Chocolate Lab laying on sand">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/W4qJVK8M/20210724-121105.jpg" alt="Chocolate Lab in kiddie pool">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/SxsMTjz1/20220225-185108.jpg" alt="Chocolate Lab with Birthday Hat">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/2jQh3sDG/20220408-125636-exported-199.jpg" alt="Chocolate Lab on Hike">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/TwrLLDZ1/20220929-122034.jpg" alt="Chocolate Lab awaiting simi truck of treats">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/C5SZjKgN/20221009-092403.jpg" alt="Chocolate Lab with calico cat">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/BZBPJ2Tw/20230418-150136.jpg" alt="Chocolate Lab with pug friend">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/fTWtyk5W/20230516-124414.jpg" alt="Chocolate Lab with pug friend">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/zXdLg5PC/20230901-181635.jpg" alt="Chocolate Lab happy on dock at lake">
+                </div>
+                <div class="flexitem">
+                    <img class="gallery-small" src="https://i.postimg.cc/6qc8zN6N/20230904-105009.jpg" alt="Chocolate Lab on dock at lake with corgi">
+                </div>
+
+            </div>
+            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)"> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
+                🐾 Click Here to go Resources and Credits 🐾
+            </button>
+        </main>
+    </body>
+    <footer>
+        <p>© John Moreau | CSS115 | 11-9-23</p>
+    </footer>
+</html>
