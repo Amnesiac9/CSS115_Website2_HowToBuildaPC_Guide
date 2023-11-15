@@ -191,6 +191,8 @@ border: 2px solid #ffffff;
   text-align: left;
   transition: .2s;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   width: max-content;
 }
 
