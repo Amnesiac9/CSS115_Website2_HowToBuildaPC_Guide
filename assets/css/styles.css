@@ -146,7 +146,7 @@ border: 2px solid #ffffff;
 /* ******** CSS for Buttons ******** */
 
 .next-button {
-  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  background-image: linear-gradient(-180deg, #4eadd5 0%, #1E96C8 100%);
   border-radius: .5rem;
   color: #FFFFFF;
   display: flex;
@@ -154,7 +154,7 @@ border: 2px solid #ffffff;
   justify-content: center;
   align-self: center;
   padding: 1rem 0.5rem;
-  margin: 3rem 1rem 1rem;
+  margin: 2rem 1rem 1rem;
   text-decoration: none;
   width: 75%;
   border: 0;
@@ -331,3 +331,11 @@ body {
   color: var(--text-darkmode) !important;
 }
 
+.subtitle {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  margin-top: -0.25rem;
+  
+}
