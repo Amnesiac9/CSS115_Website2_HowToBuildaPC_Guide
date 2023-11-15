@@ -1,0 +1,230 @@
+<!-- /*
+* John Moreau
+* CSS115
+* 11/8/2023
+*
+*/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+        <script defer src="assets/scripts/index.js"></script>
+    </head>
+    <body class="dark backgroundDog">
+        <header class="header">
+            <div id="logo">
+                <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
+            </div>
+            <nav class="top-nav light">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="guide.html">Guide</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+            <div class="switch">
+                <span id="darkmode-switch" class="darkmode-switch dark">Dark mode: ON</span>
+            </div>
+        </header>
+        <main id="wrapper" class="home dark">
+            <h2 class="page-title">Guide</h2>
+            <h3>Building a PC</h3>
+            <div class="divider"></div>
+            <h4>Table of Contents</h4>
+            <ol>
+                <li><a href="guide.html#step-parts">Choose your parts</a></li>
+                <li><a href="guide.html#step-motherboard">Install the Motherboard</a></li>
+                <li><a href="guide.html#step-ram">Install the RAM</a></li>
+                <li><a href="guide.html#step-cpu">Install the CPU & Cooler</a></li>
+                <li><a href="guide.html#step-storage">Install the Storage</a></li>
+                <li><a href="guide.html#step-psu">Install the Power Supply</a></li>
+                <li><a href="guide.html#step-os">Install the OS & Programs</a></li>
+            </ol>
+            <div class="divider"></div>
+            <ol>
+
+                <!-- PARTS --> 
+                <li id="step-parts"><h4>Choose your parts</h4></li>
+                <p>
+                    The first step to building a PC is to put together a list of the parts you need.
+                    This first step can be the most difficult, but there are many resources available to help! 
+                    <br><br>
+                    This guide will focus on the building aspect, since choosing parts could be a full guide on it's own, but we will share some resources here.
+                    One of my favorite resources for choosing parts is <a href="https://pcpartpicker.com/">PCPartPicker.com</a>.
+                    <br><br> 
+                    PCPartPicker is a great resource for choosing parts because it has a compatibility filter, so you can be sure that the parts you choose will work together.
+                    <br><br>
+                    A great place to start is their <a href="https://pcpartpicker.com/guide/">build guides</a>, these allow you to
+                    take a look at up-to-date expert builds that fit your budget, and gives you a good baseline to start with and tweak from there.
+                    <br><br>
+                    If you need more inspiration, you can always check out the <a href="https://pcpartpicker.com/builds/">completed builds</a> section to see what other people have built, and you can filter based on your budget!
+                </p>
+
+                <!-- MOTHERBOARD -->
+                <li id="step-motherboard"><h4>Install the Motherboard</h4></li>
+                <p>
+                    To install the motherboard, the easiest method is to lay the case down.
+                    This way you can place the motherboard in and screw it down without having to worry about it falling or moving.
+                    <br><br>
+                    <strong>Be sure to install the I/O shield before the motherboard!</strong>
+                    <br><br>
+                    The I/O shield is the rectangular protective plate that clicks inside the back of the case to protect the IO ports on your motherboard.
+                    <br><br>
+                    If you need a visual guide, a video to follow along with is listed below.
+                </p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ExOPdpnjpQk?si=_tVnv8GfrhNQpPH2&amp;start=79" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="subtitle">
+                        How to Install / Swap your PC Motherboard STEP BY STEP -
+                         <a href="https://www.youtube.com/@AirBearGaming">
+                            @AirBearGaming
+                         </a>
+                    </p>
+                </div>
+
+                <!-- RAM -->
+                <li id="step-ram"><h4>Install the RAM</h4></li>
+                <p>
+                    Installing the RAM, or Random Access Memory, is a simple process, don't be afraid! <br><br>
+                    The most important thing to remember is to line up the notch on the RAM with the notch on the motherboard.
+                    Once lined up, simply push down on the ram evenly until it clicks into place. Violà! You've installed your RAM!
+                    <br><br>
+                    If you need a visual guide, a video to follow along with is listed below.
+                </p>
+                <div class="video-container">
+                    <!-- TODO replace -->
+                    <p class="subtitle">
+                        How to Install / Swap your PC Motherboard STEP BY STEP -
+                         <a href="https://www.youtube.com/@AirBearGaming">
+                            @AirBearGaming
+                         </a>
+                    </p>
+                </div>
+
+                <!-- CPU -->
+                <li id="step-cpu"><h4>Install the CPU & Cooler</h4></li>
+                <p>
+                    Installing the CPU, or Central Processing Unit, is a delicate process, but it's not as scary as it might seem.
+                    <br><br>
+                    The most important thing to remember is to line up the triangle on the CPU with the triangle on the motherboard.
+                    Once lined up, simply set the CPU into place, then simply close the latch. It might feel like it needs a lot of pressure when closing the latch, that's normal!
+                    <div class="centered">
+                        <img src="https://finalprojecte.readthedocs.io/en/latest/_images/CPUpicture.png" alt="CPU Triangle" class="img-guide">
+                        <p class="subtitle">CPU Notches and Triangle Indicator - 
+                            <a href="https://finalprojecte.readthedocs.io/en/latest/">
+                                finalprojecte.readthedocs.io
+                            </a>
+                        </p>
+                    </div>
+                    <br><br>
+                    Next, you'll want to install the CPU cooler. This is the part that keeps your CPU from overheating and throttling its power, and it's important to have one!
+                    <br><br>
+                    Some CPU Coolers come with thermal paste pre-applied, but if yours doesn't, you'll want to apply a small amount of thermal paste to the center of the CPU.
+                    <br><br>
+                    Slowly push the CPU cooler into place, and screw it down in an X pattern to ensure even pressure is applied.
+                    <br><br>
+                    If you need a visual guide, a video to follow along with is listed below.
+                    <div class="video-container">
+
+                        <!-- TODO replace -->
+                        <p class="subtitle">
+                            How to Install / Swap your PC Motherboard STEP BY STEP -
+                            <a href="https://www.youtube.com/@AirBearGaming">
+                                @AirBearGaming
+                            </a>
+                        </p>
+                    </div>
+                </p>
+
+                <!-- STORAGE -->
+                <li id="step-storage"><h4>Install the Storage</h4></li>
+                <p>
+                    Installing the storage is a simple process, but it's important to know the difference between the two main different types of storage.
+                    <br><br>
+                    There are two main types of storage, Hard Disk Drives (HDDs) and Solid State Drives (SSDs).
+                    <br><br>
+                    HDDs use a spinning disk to store data, and are much slower than SSDs, but they are much cheaper per gigabyte. 
+                    They also tend to slow down with age, and require defragmentation to keep them running smoothly.
+                    <br><br>
+                    SSDs are much faster, and don't slow down with time, but they typically have a much lower storage capacity for the same price. The prices are always coming down, though!
+                    Large SSD's have become very affordable in recent years. If your motherboard supports it, the fastest SSDs are NVMe SSDs, which plug directly into the motherboard via M.2 slots.
+                    <br><br>
+                    The best option is to have both, an SSD for your operating system and programs, and an HDD for your large files or general storage.
+                    <br><br>
+                    To install the storage, simply slide it into the drive bay, and screw it down. If you need a visual guide, a video to follow along with is listed below.
+                    <div class="video-container">
+                        <!-- TODO replace -->
+                        <p class="subtitle">
+                            How to Install / Swap your PC Motherboard STEP BY STEP -
+                            <a href="https://www.youtube.com/@AirBearGaming">
+                                @AirBearGaming
+                            </a>
+                        </p>
+                    </div>
+                </p>
+
+                <!-- PSU -->
+                <li id="step-psu"><h4>Install the Power Supply</h4></li>
+                <p>
+                    Installing the power supply is a simple process. To start, we should mention the difference between the two different types of power supplies, modular and non-modular.
+                    <br><br>
+                    Modular power supplies have detachable cables, so you can only use the cables you need, and leave the rest out of the case.
+                    This is great for cable management, but they tend to be more expensive.
+                    <br><br>
+                    Non-modular power supplies have all the cables attached, so you'll have to find a place to hide any cables in your case.
+                    <br><br>
+                    To install the power supply, simply slide it into the drive bay, and screw it down. If you need a visual guide, a video to follow along with is listed below.
+                    <div class="video-container">
+                        <!-- TODO replace -->
+                        <p class="subtitle">
+                            How to Install / Swap your PC Motherboard STEP BY STEP -
+                            <a href="https://www.youtube.com/@AirBearGaming">
+                                @AirBearGaming
+                            </a>
+                        </p>
+                    </div>
+                </p>
+
+                <!-- OS -->
+                <li id="step-os"><h4>Install the OS & Programs</h4></li>
+                <p>
+                    Before installing anything, it's recommended you boot into the BIOS and ensure everything is working properly and your components are being detected.
+                    <br><br>
+                    To boot to the BIOS, turn the PC on and press the key listed on the screen to enter the BIOS. This is usually F2, F10, or Delete.
+                    <br><br>
+                    Once in the BIOS, you can check to make sure your CPU, RAM, and Storage are all being detected properly. 
+                    <strong>If your RAM supports XMP</strong>, be sure to enable it here to increase your RAM speed to the number advertised.
+                
+                    <br><br>
+                    For installing windows, you can create a bootable USB following <a href="https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d">this guide from Microsoft</a>.
+                    Then plug in a USB drive with your operating system installer, and follow the on-screen instructions. 
+                    Remember to install your OS on your SSD for optimal performance!
+                    <br><br>
+
+                    <br><br>
+                    After that, it's all up to you on which programs you want to install! Grab your favorite web browser, games, or productivity software and enjoy!
+                    
+                </p>
+            </ol>
+
+            <div class="divider"></div>
+            
+            <div class="centered">
+                <h3 id="congratulations" class="nobm">Congratulations!</h3>
+                <p class="nomargin">You've built your first PC!</p>
+                <p>Want to share your build? Send us an email with a picture to <em>submissions@pcbuilderzwebsite.com</em> for a chance to be featured on our site!</p>    
+            </div>
+            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)" autofocus> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
+                Click Here to go to check out our PC gallery!
+            </button>
+        </main>
+    </body>
+    <footer>
+        <p>© John Moreau | CSS115 | 11-9-23</p>
+    </footer>
+</html>

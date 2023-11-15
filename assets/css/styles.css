@@ -116,12 +116,11 @@ border: 2px solid #ffffff;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
   padding: 20px;
   border-radius: 5px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: 0rem 0.75rem 1.5rem; /* top right bottom left */
+  max-width: 55rem;
+  margin: 2rem auto;
+  padding: 0rem 1.5rem 1.5rem; /* top right bottom left */
   background-color: rgba(211, 211, 211, 0.85);
   align-items: center;
   
@@ -182,7 +181,7 @@ header {
 footer {
   margin: 0 auto;
   padding: 0.5rem 1rem;
-  max-width: 75rem;
+  max-width: 55rem;
   opacity: 0.50;
   min-height: 50vh;
 }
@@ -237,6 +236,11 @@ h2 {
 
 h3 {
   text-align: center;
+}
+
+h4 {
+  text-align: left;
+
 }
 
 /* ******** CSS for Tables ******** */
@@ -323,6 +327,10 @@ body {
   color: #252525;
 }
 
+p {
+  padding: 1rem;
+}
+
 .hidden * {
   display: none;
 }
@@ -336,6 +344,43 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   margin-bottom: 1.25rem;
-  margin-top: -0.25rem;
+  margin-top: -0.50rem;
   
+}
+
+.divider {
+  width: 80%;
+  border-bottom: 2px solid #252525;
+  margin: 1rem 0;
+}
+
+.video-container {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.nobm {
+  margin-bottom: 0;
+}
+
+.notm {
+  margin-top: 0;
+}
+
+.nomargin {
+  margin: 0;
+
+}
+
+.centered {
+  text-align: center;
+  align-items: center;
+}
+
+.img-guide {
+  width: 75%;
+  height: auto;
+  margin: 1rem auto 0rem;
 }
