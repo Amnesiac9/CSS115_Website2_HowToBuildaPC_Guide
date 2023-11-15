@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
         <script defer src="assets/scripts/index.js"></script>
     </head>
-    <body class="dark backgroundDog">
+    <body class="dark backgroundCpu" id="step-start">
         <header class="header">
             <div id="logo">
                 <img src="assets/images/Mars_Colored_Cropped.png" alt="MarsBytes Logo" class="logo">
@@ -36,6 +36,7 @@
             <h3>Building a PC</h3>
             <div class="divider"></div>
             <h4>Table of Contents</h4>
+            
             <ol>
                 <li><a href="guide.html#step-parts">Choose your parts</a></li>
                 <li><a href="guide.html#step-motherboard">Install the Motherboard</a></li>
@@ -45,6 +46,7 @@
                 <li><a href="guide.html#step-psu">Install the Power Supply</a></li>
                 <li><a href="guide.html#step-os">Install the OS & Programs</a></li>
             </ol>
+            <p class="subtitle">Click on a step to jump to it!</p>
             <div class="divider"></div>
             <ol>
 
@@ -226,7 +228,7 @@
                 <p class="nomargin">You've built your first PC!</p>
                 <p>Want to share your build? Send us an email with a picture to <em>submissions@pcbuilderzwebsite.com</em> for a chance to be featured on our site!</p>    
             </div>
-            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)" autofocus> <!-- button, labeled by it's contents, set to autofocus so that enter goes to the next page. -->
+            <button class="next-button" id="next-button" onclick="nextPage(window.location.href)"> <!-- button, labeled by it's contents -->
                 Click Here to go to check out our PC gallery!
             </button>
         </main>

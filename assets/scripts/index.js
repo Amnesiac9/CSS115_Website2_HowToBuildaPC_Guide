@@ -79,7 +79,7 @@
         console.log(currentURL)
         const currentPage = currentURL.split('/').pop();
         console.log(currentPage)
-        const pages = ['index.html', 'about.html', 'gallery.html', 'resources.html'];
+        const pages = ['index.html', 'guide.html', 'gallery.html', 'resources.html'];
         const currentPageIndex = pages.indexOf(currentPage);
         if (currentPage === "" || currentPageIndex === -1) {
             location.href = pages[1];
