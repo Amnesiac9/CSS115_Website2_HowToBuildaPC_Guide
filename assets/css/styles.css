@@ -415,4 +415,33 @@ p {
   margin: 1rem auto 0rem;
 }
 
+/* ******** CSS FOR RAINBOW TEXT ******** */
+#shadowBox {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px solid;
+}
+
+.rainbow {
+  font-size: 1.5rem !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100% !important;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0 ;
+  }
+}
         
